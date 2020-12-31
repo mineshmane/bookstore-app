@@ -22,7 +22,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
 import { MycartComponent } from './components/mycart/mycart.component';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,7 @@ import { MycartComponent } from './components/mycart/mycart.component';
     MycartComponent
   ],
   imports: [
-    BrowserModule,MatMenuModule,
+    BrowserModule,MatMenuModule,MatExpansionModule,MatSnackBarModule,
     AppRoutingModule,MatFormFieldModule,ReactiveFormsModule,FormsModule,HttpClientModule,MatCardModule,
     BrowserAnimationsModule,MatIconModule,MatInputModule,MatButtonModule,MatToolbarModule,MatTooltipModule,MatBadgeModule
   ],
